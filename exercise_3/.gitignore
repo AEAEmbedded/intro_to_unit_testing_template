@@ -2,4 +2,8 @@ build/
 build_tests/
 sdkconfig.old
 .vscode/
-unity-app/
+.pixi/
+
+# pixi environments
+.pixi
+*.egg-info

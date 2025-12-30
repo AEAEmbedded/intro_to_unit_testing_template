@@ -16,6 +16,7 @@ else()
 
     FetchContent_MakeAvailable(catch2)
     add_executable(test_host test/test_host/test_host.cpp)
+    target_include_directories(test_host PUBLIC include)
     target_link_libraries(test_host PRIVATE Catch2::Catch2WithMain)
     list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
     include(CTest)
